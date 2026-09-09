@@ -1,36 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shalom David — AI Training & Annotation Specialist</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shalom David — AI Training & Annotation Specialist</title>
+  <meta name="description" content="AI Training and Annotation Specialist focused on LLM evaluation, data quality, safety, and RLHF workflows.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Shalom David</h1>
-            <p class="subtitle">AI Training & Annotation Specialist</p>
-        </header>
-
-        <main>
-            <section class="about">
-                <h2>About</h2>
-                <p>I'm an AI Training & Annotation Specialist focused on developing and refining AI systems through high-quality data annotation and training methodologies. Passionate about improving AI capabilities and ensuring robust model performance.</p>
-            </section>
-
-            <section class="contact">
-                <h2>Connect</h2>
-                <ul>
-                    <li><a href="mailto:shalomoutlier@gmail.com">Email</a></li>
-                    <li><a href="https://www.linkedin.com/in/shalom-undefined-35482b434" target="_blank">LinkedIn</a></li>
-                </ul>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; 2026 Shalom David. All rights reserved.</p>
-        </footer>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">SD</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+      </button>
     </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero">
+    <div class="container">
+      <p class="hero-label">AI Training & Annotation Specialist</p>
+      <h1>Shalom David</h1>
+      <p class="hero-subtitle">
+        Improving AI systems through careful evaluation, data annotation,<br>
+        prompt testing, and quality assurance.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Get in touch</a>
+        <a href="#about" class="btn btn-ghost">Learn more</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div class="about-content">
+        <p>
+          I'm an AI Training and Annotation Specialist with experience helping improve AI systems through careful evaluation, data annotation, prompt testing, and quality assurance. My focus is on making AI responses more accurate, relevant, safe, and aligned with user instructions.
+        </p>
+        <p>
+          I'm highly detail-oriented, analytical, and consistent, with a strong ability to follow guidelines, identify errors, and deliver high-quality work independently in remote environments.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expertise -->
+  <section id="expertise" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Expertise</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>LLM Evaluation</h3>
+          <p>Response evaluation, human preference ranking, and quality assessment of model outputs.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Data Annotation</h3>
+          <p>Text classification, intent & sentiment analysis, data labeling, and structured annotation.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Safety & Alignment</h3>
+          <p>Hallucination detection, bias & safety review, fact-checking, and guideline adherence.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Training Workflows</h3>
+          <p>SFT / RLHF support, prompt testing, and quality assurance for model improvement loops.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-list">
+        <div class="experience-item">
+          <div class="exp-header">
+            <h3>AI Training Platforms</h3>
+            <span class="exp-tag">Remote</span>
+          </div>
+          <p class="exp-role">Annotation & Evaluation Specialist</p>
+          <p>
+            Collaborated with platforms including <strong>Outlier</strong> and other AI training organizations on high-quality data annotation, LLM response evaluation, and preference ranking tasks that directly improve model performance and safety.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-intro">Open to remote AI training, annotation, and evaluation opportunities.</p>
+      <div class="contact-cards">
+        <a href="mailto:shalomoutlier@gmail.com" class="contact-card">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">shalomoutlier@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/shalom-undefined-35482b434" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">shalom-undefined-35482b434</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Shalom David. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      toggle.classList.toggle('open');
+    });
+
+    // Close menu on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        toggle.classList.remove('open');
+      });
+    });
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
